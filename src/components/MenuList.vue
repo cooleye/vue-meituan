@@ -50,7 +50,7 @@ export default {
         }
     },
     mounted() {
-      console.log('Current Swiper instance object', this.swiper)
+    //   console.log('Current Swiper instance object', this.swiper)
       this.swiper.slideTo(3, 1000, false)
     }
 }
@@ -60,7 +60,7 @@ export default {
     height: 3.6rem;
     background: #fff;
     border-bottom: 1px solid #DDD8CE;
-
+    text-align center;
 
 .menu-list
     li

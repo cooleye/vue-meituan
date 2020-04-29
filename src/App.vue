@@ -21,12 +21,13 @@ html,body{
 body{
   margin: 0;padding: 0;
   background: #f0efed;
+  overflow-x: hidden;
 }
 #app {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 /*包含以下四种的链接*/
@@ -55,5 +56,13 @@ ul{
   list-style: none;
   margin: 0;
   padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+p{
+  margin: 0;
+  padding:0;
 }
 </style>

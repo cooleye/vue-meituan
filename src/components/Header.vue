@@ -40,6 +40,7 @@ export default {
     background-image: linear-gradient(135deg, #FFD000 0%, #FFBD00 100%);
     display: flex;
     font-size: .28rem;
+    text-align center;
     .city
         width: 1.5rem;
         font-weight: 600;
