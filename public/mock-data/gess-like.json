@@ -10,7 +10,7 @@
             "selled":234575
         },
         {
-            "id":0,
+            "id":1,
             "name":"土家族掉香缘掉渣饼",
             "imgUrl":"/static/f/dzp.jpg",
             "desc":"[西单]掉渣饼1份，提供免费WiFi",
@@ -19,7 +19,7 @@
             "selled":234575
         },
         {
-            "id":0,
+            "id":2,
             "name":"味多美",
             "imgUrl":"/static/f/wdm.jpg",
             "desc":"[北京等]老婆饼（单粒装）1份，包间免费",
@@ -28,7 +28,7 @@
             "selled":234575
         },
         {
-            "id":0,
+            "id":3,
             "name":"村上一屋",
             "imgUrl":"/static/f/f1.jpg",
             "desc":"[35店通用]抢购芒果大虾卷1份",
@@ -37,7 +37,7 @@
             "selled":234575
         },
         {
-            "id":0,
+            "id":4,
             "name":"彭记铁锅肥肠",
             "imgUrl":"/static/f/cs.jpg",
             "desc":"[北新桥/簋街]铁锅肥肠2-3人套餐",
@@ -46,7 +46,7 @@
             "selled":234575
         },
         {
-            "id":0,
+            "id":5,
             "name":"DQ",
             "imgUrl":"/static/f/pj.jpg",
             "desc":"[北京等]50元冰淇淋蛋糕代金券1张",
