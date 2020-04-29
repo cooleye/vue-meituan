@@ -1,20 +1,22 @@
 <template>
   <div class='header'>
       <div class="city">
-          <a href="#">
-              北京 <img  style="height:0.1rem;" src="/static/down.png" alt="">
-          </a>
+            <router-link to="/#">
+                北京 <img  style="height:0.1rem;" src="/static/down.png" alt="">
+            </router-link>
       </div>
       <div class="search">
           <div class="input">
-              <a href="#">
+              <router-link to="/#">
                   <img src="/static/search.png" alt="">
                   <span>请输入商家名、品类或者商圈...</span>
-              </a>
+              </router-link>
           </div>
       </div>
       <div class="me">
-          <img src="/static/me.png" alt="">
+          <router-link to="/#">
+           <img src="/static/me.png" alt="">
+          </router-link>
       </div>
   </div>
 </template>
