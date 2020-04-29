@@ -19,9 +19,23 @@
           <div class="in-pay-type-wrapper">
              <img src="/static/mtpay.png" alt="">
              <span>美团支付</span>
-             <input type="radio">
+             <input type="radio" checked name="paytype" >
+          </div>
+          <div class="in-pay-type-wrapper">
+             <img src="/static/wxpay.png" alt="">
+             <span>微信支付</span>
+             <input type="radio" name="paytype">
+          </div>
+          <div class="in-pay-type-wrapper">
+             <img src="/static/alipay.png" alt="">
+             <span>支付宝支付</span>
+             <input type="radio" name="paytype">
           </div>
       </div>
+
+      <div class="submit" @click="submit()">
+            确认支付
+        </div>
   </div>
 </template>
 
@@ -34,7 +48,11 @@ export default {
   components: {},
   created(){},
   mounted(){},
-  methods: {}
+  methods: {
+    goback(){
+      this.$router.back()
+    }
+  }
 }
 </script>
 <style lang="stylus" scoped>
@@ -42,6 +60,8 @@ export default {
     width:100%;
     height:100%;
     background #fff;
+    padding-bottom 1em;
+    
 
 .in-order
     padding:.5rem;
@@ -78,5 +98,66 @@ header
           font-size:.3rem;
           font-weight:400;
           color:#333;
+.in-pay-method
+    padding:.2rem;
+    .in-pay-type-wrapper
+        font-size:.32rem;
+        height 1rem;
+        line-height 3em;
+        border-bottom:solid 1px #ccc;
+        img 
+            width :.4rem;
+            vertical-align middle;
+        span 
+            margin-left:.3rem;
+        input
+            float :right;
+            margin-right :.5rem;
+            margin-top:.5rem;
+
+.submit
+    width 6rem;
+    height 0.9rem;
+    text-align center;
+    background linear-gradient(135deg, #FFD000 0%, #FFBD00 100%);;
+    line-height .9rem;
+    font-size:.3rem;
+    font-weight:600;
+    color:#333;
+    margin:1rem auto;
+    border-radius:5px;
+    margin-bottom :2rem;
+
+
+input[type=radio]
+      position: relative;
+      background #ffffff;
+input[type=radio]::before
+    content: "";
+    display: block;
+    width:.5rem;
+    height:.5rem;
+    background #fff;
+    border-radius: .4rem;
+    border:solid 1px #888;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+
+input[type=radio]:checked::after
+    content: "✔️";
+    font-size: 24px;
+    width:.52rem;
+    height:.52rem;
+    position: absolute;
+    background: #FFD000;
+    border:none;
+    border-radius: .4rem;
+    left: -15px;
+    top: -15px;
+    color: #fff;
+    text-align center;
+    line-height .5rem;
+
 
 </style>
