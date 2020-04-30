@@ -2,7 +2,7 @@
   <div class='header'>
       <div class="city">
             <router-link to="/#">
-                {{cityName}} <img  style="height:0.1rem;" src="/static/down.png" alt="">
+                {{cityName || "北京"}} <img  style="height:0.1rem;" src="/static/down.png" alt="">
             </router-link>
       </div>
       <div class="search">
