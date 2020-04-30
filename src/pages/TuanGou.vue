@@ -16,7 +16,7 @@
             <p>导航</p>
           </div>
       </header>
-      <div>
+      <div class="cover">
         <img src="/static/f/t-jya.jpg" alt="" srcset="">
       </div>
       <div class="buy-price">
@@ -75,6 +75,7 @@ export default {
 }
 </script>
 <style lang='stylus' scoped>
+
 header
     height :1rem;
     line-height 1rem;
@@ -176,5 +177,7 @@ header
             padding:5px 10px;
             margin: 10px;
 
-
+.cover
+  img 
+    width:100%;
 </style>

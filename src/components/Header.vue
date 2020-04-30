@@ -14,7 +14,7 @@
           </div>
       </div>
       <div class="me">
-          <router-link to="/#">
+          <router-link to="/me">
            <img src="/static/me.png" alt="">
           </router-link>
       </div>
@@ -34,6 +34,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+
 .header
     height: 1rem;
     line-height: 1rem;
