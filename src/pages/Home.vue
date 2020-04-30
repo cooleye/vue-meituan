@@ -1,6 +1,6 @@
 <template>
   <div class='home'>
-      <THeader/>
+      <THeader :cityName="cityName"/>
       <MenuList/>
       <GessLike/>
       
@@ -17,16 +17,21 @@ import THeader from '../components/Header'
 import MenuList from '../components/MenuList'
 import GessLike from '../components/GessLike'
 import MFooter from '../components/Footer'
-// import {getCurPosition} from '../utils/position.js'
-
+import {getCurPosition} from '../utils/position.js'
+// import axios from 'axios'
 export default {
   name: 'home',
   data(){
-    return {}
+    return {
+      cityName:""
+    }
   },
   components: {THeader,MenuList,GessLike,MFooter},
   created(){},
   mounted(){
+    getCurPosition((cityName)=>{
+        this.cityName = cityName;
+    });
   },
   methods: {}
 }

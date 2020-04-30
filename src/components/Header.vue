@@ -2,7 +2,7 @@
   <div class='header'>
       <div class="city">
             <router-link to="/#">
-                北京 <img  style="height:0.1rem;" src="/static/down.png" alt="">
+                {{cityName}} <img  style="height:0.1rem;" src="/static/down.png" alt="">
             </router-link>
       </div>
       <div class="search">
@@ -24,6 +24,7 @@
 <script>
 export default {
   name: 'theader',
+  props:["cityName"],
   data(){
     return {}
   },
